@@ -87,7 +87,7 @@
 	>
 		<input
 			type="text"
-			class="input input-bordered w-full font-bold text-black"
+			class="input input-bordered  bg-gray-700 w-full font-bold"
 			bind:value={query}
 		/>
 		<button type="submit" class="btn btn-accent"> Send </button>
