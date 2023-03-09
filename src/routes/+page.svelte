@@ -64,8 +64,7 @@
 
 <div class="flex flex-col pt-4 w-full px-8 items-center gap-2">
 	<div>
-		<h1 class="text-2xl font-bold w-full text-center">Chatty</h1>
-		<p class="text-sm italic">Powered by gpt-3.5-turbo</p>
+		<h1 class="text-2xl font-bold w-full text-center">Tactics Chatty</h1>
 	</div>
 	<div class="h-[500px] w-full bg-gray-900 rounded-md p-4 overflow-y-auto flex flex-col gap-4">
 		<div class="flex flex-col gap-2">
@@ -86,7 +85,11 @@
 		class="flex w-full rounded-md gap-4 bg-gray-900 p-4"
 		on:submit|preventDefault={() => handleSubmit()}
 	>
-		<input type="text" class="input input-bordered w-full" bind:value={query} />
+		<input
+			type="text"
+			class="input input-bordered w-full font-bold text-black"
+			bind:value={query}
+		/>
 		<button type="submit" class="btn btn-accent"> Send </button>
 	</form>
 </div>
